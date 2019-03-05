@@ -13,7 +13,7 @@ Experiment 01 for synthesised audio data:
 Experiment 02 for real audio data:
 - Audio data used: DSD100 dataset available at https://sigsep.github.io/datasets/dsd100.html
 - Script to run experiment: experiment02.py
-- Script to plot the results (Figure 3 in the paper): plot_exp02.py
+- Script to plot the results (Figure 4 in the paper): plot_exp02.py
 
 
 Other:
