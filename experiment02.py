@@ -1,5 +1,13 @@
-# Compare all vocal tracks with all the mixture (for all the dataset)
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# AUTHOR: Delia Fano Yela
+# DATE:  February 2019
+# CONTACT: d.fanoyela@qmul.ac.uk
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# WARNING: this script uses multiprocessing => CPU intensive
+# you can change the number of processes bellow if you wish
 
+
+# Compare all vocal tracks with all the mixture (for all the dataset)
 import os
 from itertools import chain
 from librosa import load
@@ -9,12 +17,11 @@ import sklearn.metrics
 import pandas as pd
 import librosa
 import numpy as np
-from scr.visibility_algorithms import *
+from visibility_algorithms import nvg_dc
 import sys
 
+
 def processFile(subdir, filename):
-
-
     # Get the path for each mixture and its corresponding vocal stem
     mix_path = os.path.join(subdir, filename)
     vox_path = os.path.join(subdir.replace("Mixtures", "Sources"), "vocals.wav")
@@ -135,15 +142,13 @@ def processFile(subdir, filename):
     df_mrr = pd.DataFrame([[Ac_mrr,Ae_mrr,Kc_mrr,Ke_mrr,Pc_mrr,Pe_mrr]], columns=['Ac', 'Ae', 'Kc' ,'Ke','Pc','Pe'])
     df_mrr.to_csv ('results04_Test/df_mrr_%s.csv' % os.path.basename(subdir), index = None, header=True)
 
-# Path to the audio dataset, in this case DSD100 from SiSec
-#dir = "AUDIO/DSD100/Mixtures/Dev"
-dir = "AUDIO/DSD100/Mixtures/Test"
-#dir = "AUDIO/DSDTEST/Mixtures/Dev"
+
+----------------------------------------------------------------------------------------------------------
+# Path to the audio dataset:
+dir = "AUDIO/DSD100/Mixtures/Test" # <----------------------- SET PATH TO DATASET
 
 # Setup multiprocessing
 procs = []
-
-
 
 for subdir, dirs, files in os.walk(dir) :
     for filename in files:

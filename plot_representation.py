@@ -1,7 +1,7 @@
 from librosa import load
 import librosa
 import numpy as np
-from scr.visibility_algorithms import *
+from visibility_algorithms import nvg_dc
 import librosa.display
 import matplotlib.pyplot as plt
 

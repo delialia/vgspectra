@@ -16,11 +16,10 @@ import time
 import sys
 #from tabulate import tabulate
 # Import the Divide & Conquer natural visibility graph implementation (necessary)
-from scr.visibility_algorithms import nvg_dc
-from scr.mixing import *
+from visibility_algorithms import nvg_dc
 
 # Testing parameters:
-dir = "AUDIO/synth_dataset/" # Define the path to the synthesised test data:
+dir = "AUDIO/synth_dataset/" # Define the path to the synthesised test data
 snr_values = [-24, -12, -6, -3, 0, 3, 6]
 metrics = ['euclidean', 'cosine']
 
@@ -133,8 +132,6 @@ for dis in metrics:
         df_mrr = df_mrr.append(pd.DataFrame([[mrrA, 'spectrum', dis, snr]], columns = ['MRR', 'ftype', 'dtype', 'SNR']), ignore_index=True)#,sort=True)
         df_mrr = df_mrr.append(pd.DataFrame([[mrrK, 'degree', dis, snr]], columns = ['MRR', 'ftype', 'dtype', 'SNR']), ignore_index=True)#,sort=True)
         df_mrr = df_mrr.append(pd.DataFrame([[mrrP, 'degree distribution', dis, snr]], columns = ['MRR', 'ftype', 'dtype', 'SNR']), ignore_index=True)#,sort=True)
-
-
 
 
 df_mrr.to_csv ('df_mrr_exp01.csv', index = None, header=True)

@@ -68,7 +68,7 @@ def nvg(series, timeLine):
 
     return all_visible
 
-# b. DIVIDE & CONQUER
+# b. DIVIDE & CONQUER <---------------------- QUICKEST NVG IMPLEMENTATION
 # --------------------------
 def nvg_dc(series, timeLine, left, right, all_visible = None):
 

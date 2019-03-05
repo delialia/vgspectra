@@ -1,0 +1,5 @@
+*.pyc
+*.mp4
+**/.DS_Store
+._.*
+.ipynb_checkpoints
