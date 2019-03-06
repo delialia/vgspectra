@@ -3,6 +3,8 @@ Visibility graphs for robust harmonic similarity measures between audio spectra
 
 This code accompanies the paper "Visibility graphs for robust harmonic similarity measures between audio spectra" by Delia Fano Yela, Dan Stowell and Mark Sandler, where we introduce the visibility graph for audio spectra and propose to use a structural distance between two graphs as a novel harmonic-biased similarity measure.
 
+It can be found at http://arxiv.org/abs/1903.01976 
+
 In the paper we present two experiments demonstrating the utility of the proposed representation of audio signals for harmonic similarity measure.
 
 Experiment 01 for synthesised audio data:
