@@ -4,7 +4,7 @@
 # CONTACT: d.fanoyela@qmul.ac.uk
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # WARNING: this script uses multiprocessing => CPU intensive
-# you can change the number of processes bellow if you wish
+# you can change the number of processes below if you wish
 
 
 # Compare all vocal tracks with all the mixture (for all the dataset)
