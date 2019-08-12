@@ -1,9 +1,13 @@
 # vgspectra
-Visibility graphs for robust harmonic similarity measures between audio spectra
+Spectral Visibility Graphs
 
-This code accompanies the paper "Visibility graphs for robust harmonic similarity measures between audio spectra" by Delia Fano Yela, Dan Stowell and Mark Sandler, where we introduce the visibility graph for audio spectra and propose to use a structural distance between two graphs as a novel harmonic-biased similarity measure.
+This code accompanies the paper "Spectral Visibility Graphs: Application to Similarity of Harmonic Signals" by Delia Fano Yela, Dan Stowell and Mark Sandler, where we introduce the visibility graph for audio spectra and propose a novel representation for audio analysis: the spectral visibility graph degree.
+Such representation inherently captures the harmonic content of the signal whilst being resilient to broadband noise. We present experiments demonstrating its utility to measure robust similarity between harmonic signals in real and synthesised audio data.
+Preprint can be found at http://arxiv.org/abs/1903.01976  
 
-It can be found at http://arxiv.org/abs/1903.01976 
+
+--> NEWS : Paper accepted and will be presented at EUSIPCO in A Coruña on Tuesday 3rd of September 2019 - join us! <--
+
 
 In the paper we present two experiments demonstrating the utility of the proposed representation of audio signals for harmonic similarity measure.
 
