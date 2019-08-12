@@ -6,7 +6,7 @@ Such representation inherently captures the harmonic content of the signal whils
 Preprint can be found at http://arxiv.org/abs/1903.01976  
 
 
---> NEWS : Paper accepted and will be presented at EUSIPCO in A Coruña on Tuesday 3rd of September 2019 - join us! <--
+NEWS : Paper accepted and will be presented at EUSIPCO in A Coruña on Tuesday 3rd of September 2019 - join us!
 
 
 In the paper we present two experiments demonstrating the utility of the proposed representation of audio signals for harmonic similarity measure.
