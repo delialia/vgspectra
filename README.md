@@ -1,12 +1,6 @@
-# vgspectra
-Spectral Visibility Graphs
+# vgspectra : Spectral Visibility Graphs
 
-This code accompanies the paper "Spectral Visibility Graphs: Application to Similarity of Harmonic Signals" by Delia Fano Yela, Dan Stowell and Mark Sandler, where we introduce the visibility graph for audio spectra and propose a novel representation for audio analysis: the spectral visibility graph degree.
-Such representation inherently captures the harmonic content of the signal whilst being resilient to broadband noise. We present experiments demonstrating its utility to measure robust similarity between harmonic signals in real and synthesised audio data.
-Preprint can be found at http://arxiv.org/abs/1903.01976  
-
-
-NEWS : Paper accepted and will be presented at EUSIPCO in A Coruña on Tuesday 3rd of September 2019 - join us!
+This code accompanies the [paper](http://eusipco2019.org/Proceedings/papers/1570533774.pdf) "Spectral Visibility Graphs: Application to Similarity of Harmonic Signals" by Delia Fano Yela, Dan Stowell and Mark Sandler (EUSIPCO 2019) where we introduce the visibility graph for audio spectra and propose a novel representation for audio analysis: the spectral visibility graph degree.Such representation inherently captures the harmonic content of the signal whilst being resilient to broadband noise. We present experiments demonstrating its utility to measure robust similarity between harmonic signals in real and synthesised audio data.
 
 
 In the paper we present two experiments demonstrating the utility of the proposed representation of audio signals for harmonic similarity measure.
@@ -31,7 +25,21 @@ Other:
 
 - results_experiments : folder containing the results (in form .csv) obtained from the experiments scripts and used by the plotting scripts.
 
+# References
+**If you use this work for your research please cite:**
+```
+@INPROCEEDINGS{vgspectra,  
+  author={D. F. {Yela} and D. {Stowell} and M. {Sandler}},  
+  booktitle={2019 27th European Signal Processing Conference (EUSIPCO)},  
+  title={Spectral Visibility Graphs: Application to Similarity of Harmonic Signals},   
+  year={2019},  
+  volume={},  
+  number={},
+  pages={1-5}}
+```
+
+
 ------------------------------------------------------------------------------
 AUTHOR: Delia Fano Yela  
-DATE: August 2019
-CONTACT: d.fanoyela@qmul.ac.uk  
+DATE: April 2020
+CONTACT: d.fanoyela@qmul.ac.uk  - most recently : delia@chordify.net
